@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+}
+
+body {
+    background-image: url("bigsur.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#calculator-display {
+    background-color: #572720;
+    width: 100%;
+    height: 100px;
+    padding: 50px;
+    font-size: 40px;
+    border-radius: 12px 12px 0 0;
+}
+
+#calculator-keypad {
+    padding: 0;
+    height: 350px;
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+}
+
+.calculator-button {
+    cursor: pointer;
+    color: #fce8e6;
+    background-color: #7e4e56;
+    border: 1px solid #52292a;
+    margin: 0;
+}
+
+.top-button {
+    background-color: #683633;
+}
+
+.orange-button {
+    background-color: #ff940b;
+}
+
+#zero-button {
+    grid-column: 1 / 3;
+    border-radius: 0 0 0 12px;
+}
+
+#equals-button {
+    border-radius: 0 0 12px 0;
+}
+
+#red, #yellow, #green {
+    position: relative;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+#red {
+    background-color: #f95554;
+    top: -42px;
+    left: -42px;
+    margin-left: 1px;
+    margin-bottom: -16px;
+}
+
+#yellow {
+    background-color: #fab52a;
+    top: -42px;
+    left: -16px;
+    margin-left: 1px;
+    margin-bottom: -16px;
+}
+
+#green {
+    background-color: #1dc039;
+    top: -42px;
+    left: 10px;
+    margin-left: 1px;
+}
