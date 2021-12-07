@@ -1,1 +1,1 @@
-# macos-calculator
+# macOS Calculator Clone
